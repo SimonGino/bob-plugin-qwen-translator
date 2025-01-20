@@ -1,0 +1,12 @@
+{
+  "identifier": "simongino.qwen.translator",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "desc": "First release",
+      "sha256": "ac43b7d203df9260a0c3684608395d321528658e4837bd196335a93aaa19eadf",
+      "url": "https://github.com/simongino/bob-plugin-qwen-translator/releases/download/v0.1.0/qwen-translator-0.1.0.bobplugin",
+      "minBobVersion": "0.5.0"
+    }
+  ]
+}
