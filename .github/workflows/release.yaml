@@ -41,12 +41,15 @@ jobs:
         run: |
           git config --global user.name 'simongino'
           git config --global user.email 'rwjeek@gmail.com'
-          git commit -am 'chore: update appcast.json and info.json'
+          git add appcast.json
+          git checkout -b temp-branch
+          git commit -m 'chore: update appcast.json and info.json'
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
