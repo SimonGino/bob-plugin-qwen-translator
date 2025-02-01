@@ -27,6 +27,7 @@ This is a Bob translation plugin powered by the Qwen API. While Bob's community 
 ### Why Choose This Plugin?
 
 - LLM-based translation service for more natural and fluent results
+- Support Bob Community Edition, version requirement >= 0.50
 - Text polishing feature for expression optimization
 - Fast response using the latest Qwen-3.5 model
 - Easy installation and configuration
