@@ -24,7 +24,7 @@
     {
       "identifier": "model",
       "type": "menu",
-      "title": "模型",
+      "title": "预设模型",
       "defaultValue": "qwen-plus",
       "menuValues": [
         {
@@ -40,6 +40,16 @@
           "value": "qwen-turbo"
         }
       ]
+    },
+    {
+      "identifier": "customModel",
+      "type": "text",
+      "title": "自定义模型",
+      "desc": "可选项。如果填写此项，将优先使用自定义模型而非预设模型。请填写完整的模型名称，例如：qwen-max-1201",
+      "textConfig": {
+        "type": "visible",
+        "placeholderText": "例如：qwen-max-1201"
+      }
     },
     {
       "identifier": "temperature",

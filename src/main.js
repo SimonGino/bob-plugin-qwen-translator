@@ -87,8 +87,11 @@ function buildRequestBody(model, query, isStream) {
 
   $log.info(`System Prompt:${systemPrompt}\nUser Prompt:${userPrompt}`);
 
+  // 优先使用自定义模型，如果未设置则使用预设模型
+  const modelToUse = $option.customModel ? $option.customModel : (model || "qwen-plus");
+  
   return {
-    model: model || "qwen-plus",
+    model: modelToUse,
     messages: [
       { role: "system", content: systemPrompt },
       { role: "user", content: userPrompt }
