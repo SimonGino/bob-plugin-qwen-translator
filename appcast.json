@@ -2,6 +2,13 @@
   "identifier": "simongino.qwen.translator",
   "versions": [
     {
+      "version": "0.1.1",
+      "desc": "feat(模型配置): 添加自定义模型支持",
+      "sha256": "7eafaeee20861e438f20a59078d28343259a063fd0404e549887083cf7ef19ee",
+      "url": "https://github.com/simongino/bob-plugin-qwen-translator/releases/download/v0.1.1/qwen-translator-0.1.1.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "0.1.0",
       "desc": "First release",
       "sha256": "a52d2be035d395b84f9bd5bf5b789c6a2185cbfe02e81dbab0b5dcd8ba272831",
