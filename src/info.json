@@ -126,10 +126,10 @@
       "identifier": "apiUrlPath",
       "type": "text",
       "title": "自定义 API URL Path",
-      "desc": "发送请求的Path",
+      "desc": "发送请求的Path，默认为'/compatible-mode/v1/chat/completions'",
       "textConfig": {
         "type": "visible",
-        "placeholderText": "/v1/messages"
+        "placeholderText": "/compatible-mode/v1/chat/completions"
       }
     }
   ]

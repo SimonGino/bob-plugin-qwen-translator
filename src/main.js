@@ -169,9 +169,14 @@ function translate(query, completion) {
 function handleNormalRequest(query, completion, header, body) {
   (async () => {
     try {
+      // 使用自定义API URL或默认URL
+      const apiBaseUrl = $option.apiUrl || 'https://dashscope.aliyuncs.com';
+      const apiUrlPath = $option.apiUrlPath || '/compatible-mode/v1/chat/completions';
+      const apiUrl = `${apiBaseUrl}${apiUrlPath}`;
+      
       const response = await $http.request({
         method: 'POST',
-        url: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+        url: apiUrl,
         header,
         body,
       });
@@ -337,9 +342,14 @@ function handleStreamRequest(query, header, body) {
 
   (async () => {
     try {
+      // 使用自定义API URL或默认URL
+      const apiBaseUrl = $option.apiUrl || 'https://dashscope.aliyuncs.com';
+      const apiUrlPath = $option.apiUrlPath || '/compatible-mode/v1/chat/completions';
+      const apiUrl = `${apiBaseUrl}${apiUrlPath}`;
+      
       await $http.streamRequest({
         method: 'POST',
-        url: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+        url: apiUrl,
         header,
         body,
         streamHandler: (streamData) => {

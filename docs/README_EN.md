@@ -68,6 +68,7 @@ For more model details, please refer to the [official model comparison](https://
    - Select Services tab
    - Find Qwen Translator
    - Enter your API Key in the configuration box
+   - Customize API Base URL and API URL Path if needed
 
 6. Optional setup:
    - Install [PopClip](https://bobtranslate.com/guide/integration/popclip.html) for text selection translation

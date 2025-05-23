@@ -68,6 +68,7 @@
    - 选择服务栏
    - 找到 Qwen Translator
    - 将获取的 API Key 填入配置框
+   - 可选：配置自定义API URL和Path（如果需要使用代理或自定义端点）
 
 6. 可选配置：
    - 安装 [PopClip](https://bobtranslate.com/guide/integration/popclip.html) 实现划词翻译
