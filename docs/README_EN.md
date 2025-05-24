@@ -22,53 +22,58 @@
 
 ## Introduction
 
-This is a Bob translation plugin powered by the Qwen API. While Bob's community version lacks LLM-based translation services, this plugin fills this gap by providing a more intelligent and natural translation experience.
+This is a Bob translation plugin based on OpenAI format API, using Qwen API by default. The plugin supports all large language models compatible with OpenAI format, providing intelligent and natural translation experiences.
 
 ### Why Choose This Plugin?
 
-- LLM-based translation service for more natural and fluent results
-- Support Bob Community Edition, version requirement >= 0.50
+- Supports all language models compatible with OpenAI format
+- Default configuration uses Qwen API, no additional setup needed
+- Compatible with both Bob Store and Community versions
 - Text polishing feature for expression optimization
-- Fast response using the latest Qwen-3.5 model
 - Easy installation and configuration
-- Completely free to use with your own Qwen API Key
+- Completely free to use with your own API Key
+
+### Version Compatibility
+
+| Bob Version | Compatibility | Features |
+|-------------|--------------|----------|
+| Bob Community | ✓ Supported | - Version requirement >= 0.50<br>- No streaming response support |
+| Bob Store | ✓ Supported | - Full feature support<br>- Streaming response support<br>- Custom API URL, model parameters, etc. |
 
 ### Key Features
 
 #### Smart Translation
-Leverages Qwen's powerful language understanding capabilities for more accurate translations, especially suitable for long sentences and technical terms.
+Leverages the powerful language understanding capabilities of large language models for more accurate translations, especially suitable for long sentences and technical terms.
 
 #### Text Polishing
 Supports text optimization within the same language - just set the target language to match the source language for improved expression.
 
-### Language Model
-
-Currently uses the `Qwen-3.5` model by default:
-- Near real-time translation experience
-- Excellent translation quality
-- Cost-effective API calls
-
-For more model details, please refer to the [official model comparison](https://www.aliyun.com/product/dashscope).
+#### Model Flexibility
+- Uses Qwen API by default (`qwen-plus`)
+- Can be customized to use any model compatible with OpenAI format
+- Configurable custom API URL and Path, supporting proxies or self-hosted models
 
 ## Usage
 
-1. Install [Bob](https://bobtranslate.com/guide/#%E5%AE%89%E8%A3%85) (version >= 0.50)
+1. Install [Bob](https://bobtranslate.com/guide/#%E5%AE%89%E8%A3%85)
+   - Community version requires version >= 0.50
+   - Store version fully supports all features
 
 2. Download plugin: [qwen-translator.bobplugin](https://github.com/simongino/bob-plugin-qwen-translator/releases/latest)
 
 3. Install plugin: Double-click the downloaded .bobplugin file
 
 4. Get API Key:
-   - Visit [Qwen Console](https://console.aliyun.com/product/dashscope)
-   - Register/Login to your account
-   - Obtain API Key from the console
+   - For default Qwen API: Visit [Qwen Console](https://console.aliyun.com/product/dashscope)
+   - You can also use other APIs compatible with OpenAI format
 
 5. Configure plugin:
    - Open Bob Preferences
    - Select Services tab
    - Find Qwen Translator
    - Enter your API Key in the configuration box
-   - Customize API Base URL and API URL Path if needed
+   - Optional: Configure custom API Base URL and Path (if using proxies or other models)
+   - Optional: Select or customize the model
 
 6. Optional setup:
    - Install [PopClip](https://bobtranslate.com/guide/integration/popclip.html) for text selection translation
